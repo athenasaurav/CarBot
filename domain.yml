@@ -1,0 +1,52 @@
+intents:
+- greet
+- goodbye
+- affirm
+- deny
+- bot_challenge
+- name
+- email id
+- car
+- email
+- mpg
+entities:
+- email
+- PERSON
+- car
+- mpg
+slots:
+  PERSON:
+    type: unfeaturized
+  car:
+    type: text
+  email:
+    type: unfeaturized
+  mpg:
+    type: text
+templates:
+  utter_greet:
+  - text: Hey! How are you? I m Car bot. Helps you book a test ride also.
+  utter_askname:
+  - text: Before we Begin Let me know your name?
+  utter_askemail:
+  - text: And your email id please?
+  utter_ask_car:
+  - text: Which Car are you looking for?
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_mileage:
+  - text: How much mileage you are looking for?
+actions:
+- utter_greet
+- utter_goodbye
+- utter_iamabot
+- utter_askname
+- utter_askemail
+- action_save_name
+- action_save_email
+- utter_ask_car
+- action_car
+- utter_mileage
+- action_car_search

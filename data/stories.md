@@ -162,3 +162,17 @@
     - slot{"mpg":"19"}
     - action_car
     - action_car_search
+
+## New Story
+
+* greet
+    - utter_greet
+    - utter_askname
+* name{"PERSON":"Kumar Saurav"}
+    - slot{"PERSON":"Kumar Saurav"}
+    - action_save_name
+    - utter_askemail
+    - slot{"PERSON":"Kumar Saurav"}
+    - slot{"email":"athena.saurav@gmail.com"}
+    - action_save_email
+    - utter_ask_car
